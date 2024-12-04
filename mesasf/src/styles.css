@@ -1,0 +1,80 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom right, #f3f4f6, #e9ecef);
+    margin: 0;
+    padding: 0;
+    color: hsl(178, 96%, 80%);
+  }
+  
+  .crud-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(106, 184, 184, 0.542);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(220, 244, 143, 0.1);
+  }
+  
+  .crud-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 29%, 0.812);
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    display: block;
+    margin: 0 auto 20px;
+    background-color: hwb(177 48% 9%) !important;
+    color: hsl(0, 50%, 4%) !important;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: rgba(111, 173, 202, 0.863) !important;
+  }
+  
+  .table-container {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table-header {
+    background-color: rgba(111, 173, 202, 0.863);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: hsla(189, 77%, 86%, 0.678);
+  }
+  
+  .table-row:hover {
+    background-color: #6df8c993;
+  }
+  
+  .action-button {
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .empty-message {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .footer {
+    background-color: rgba(34, 76, 98, 0.56);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }

@@ -1,0 +1,49 @@
+body {
+  font-family: 'Poppins', sans-serif; /* Fuente Poppins */
+  background-color: #f8f9fa; /* Color pastel claro para el fondo */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Color del texto */
+}
+
+h3 {
+  color: #8E44AD; /* Color pastel morado */
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: hsl(122, 33%, 57%); /* Botón pastel verde */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: hsl(123, 43%, 44%); /* Botón pastel verde oscuro al pasar el mouse */
+}
+
+.table-container {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra de tabla */
+  border-radius: 10px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /* Degradado pastel */
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
