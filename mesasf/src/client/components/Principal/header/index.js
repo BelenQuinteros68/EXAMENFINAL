@@ -19,6 +19,7 @@ const Header = () => {
           <li><Link to="/admin/mesas">Productos</Link></li>
           <li><Link to="/admin/mesas/form">Servicios</Link></li>
           <li><Link to="/admin/registro">Contactos</Link></li>
+          <li><Link to="/admin/admin">Iniciar Sesion</Link></li>
         </ul>
       </nav>
       <button className="menu-toggle" aria-label="Abrir menú" onClick={toggleMenu}>

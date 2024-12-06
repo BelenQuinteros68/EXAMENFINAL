@@ -6,6 +6,7 @@ import './App.css';
 import MesasList from './admin/components/MesasList';
 import MesasForm from './admin/components/MesasForm';
 import MesasEdit from './admin/components/MesasEdit';
+import Login from './admin/components/Admin';
 import Registro from './admin/components/Registro';
 import Principal from './client/components/Principal';
 import './styles.css';
@@ -18,7 +19,10 @@ const App = () => {
       <Routes>
 
         <Route path="/" element={<Principal />} />
-
+        <Route 
+          path="/admin/admin" 
+          element={userLoggedIn ? <Login/> : <Navigate to="/admin/admin"/>} 
+        />
         <Route path="/admin/registro" element={<Registro />} />
         <Route 
           path="/admin/mesas" 
