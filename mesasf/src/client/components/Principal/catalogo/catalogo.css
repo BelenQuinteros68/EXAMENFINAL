@@ -1,0 +1,50 @@
+.catalogo-base-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para computadoras */
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .item-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 3rem;
+    background: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .item-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item-imagen {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .item-nombre {
+    font-size: 1.4em;
+    margin: 12px 0;
+  }
+  
+  .item-descripcion {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .item-precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Cambios para dispositivos móviles */
+  @media (max-width: 768px) {
+    .catalogo-base-container {
+      grid-template-columns: 1fr;   }
+  }
+  

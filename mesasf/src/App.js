@@ -3,40 +3,40 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import "@fontsource/poppins"; 
 import './App.css';
 
-import MesasList from './components/MesasList';
-import MesasForm from './components/MesasForm';
-import MesasEdit from './components/MesasEdit';
-import Login from './components/Login';
-import Registro from './components/Registro';
+import MesasList from './admin/components/MesasList';
+import MesasForm from './admin/components/MesasForm';
+import MesasEdit from './admin/components/MesasEdit';
+import Registro from './admin/components/Registro';
+import Principal from './client/components/Principal';
 import './styles.css';
 
 const App = () => {
-  const userLoggedIn = localStorage.getItem('userToken'); // Verifica si el usuario está logueado
+  const userLoggedIn = localStorage.getItem('userToken');
 
   return (
     <Router>
       <Routes>
-        {}
+
+        <Route path="/" element={<Principal />} />
+
+        <Route path="/admin/registro" element={<Registro />} />
+        <Route 
+          path="/admin/mesas" 
+          element={userLoggedIn ? <MesasList /> : <Navigate to="/" />} 
+        />
+        <Route 
+          path="/admin/mesas/form" 
+          element={userLoggedIn ? <MesasForm /> : <Navigate to="/" />} 
+        />
+        <Route 
+          path="/admin/mesas/edit/:id" 
+          element={userLoggedIn ? <MesasEdit /> : <Navigate to="/" />} 
+        />
+
         <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
-
-        <Route path="/" element={userLoggedIn ? <Navigate to="/mesas" /> : <Login />} />
-        
-        {}
-        <Route path="/registro" element={<Registro />} />
-
-        {}
-        <Route path="/mesas" element={userLoggedIn ? <MesasList /> : <Navigate to="/" />} />
-
-        {}
-        <Route path="/mesas/form" element={userLoggedIn ? <MesasForm /> : <Navigate to="/" />} />
-
-        {}
-        <Route path="/mesas/edit/:id" element={userLoggedIn ? <MesasEdit /> : <Navigate to="/" />} />
       </Routes>
     </Router>
   );
 };
 
 export default App;
-
-
